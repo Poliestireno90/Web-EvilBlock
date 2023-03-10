@@ -1,7 +1,12 @@
 # Web-EvilBlock
-![pixel-art-fnal](https://user-images.githubusercontent.com/116316357/224345496-a75baadf-8ca3-49e4-8b54-23cd42ea4512.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/116316357/224345496-a75baadf-8ca3-49e4-8b54-23cd42ea4512.png" />
+</p>
+<p align="center">
+ This is a Web Interface for EvilBlock  https://github.com/termal73/EvilBlock  
+</p>
 
-This is a Web Interface for EvilBlock  https://github.com/termal73/EvilBlock 
+
 ## Requirements
 - Linux distribution
 - Apache2
