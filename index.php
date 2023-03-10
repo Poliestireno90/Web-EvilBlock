@@ -34,9 +34,9 @@
         <!-- ejecuta el bash que ejecuta el bloquear.py -->
         <?php
       if(isset($_POST['ejecutar'])) {
-        $output = shell_exec('bash /var/www/projecto3bueno/ejecuta_py.sh');
+        $output = shell_exec('bash /var/www/Web-EvilBlock/ejecuta_py.sh');
         
-        $ruta_archivo = '/var/www/projecto3bueno/ip.txt';
+        $ruta_archivo = '/var/www/Web-EvilBlock/ip.txt';
        /* $contenido_archivo = file_get_contents($ruta_archivo);*/
         echo '<div class="output"><p><pre>';/*' . $contenido_archivo . '</p></div>';*/
  $fichero = fopen($ruta_archivo, "r");
@@ -82,7 +82,7 @@
     </nav>
 <div class="output">
           IP's de la red:
-          <pre><?php echo file_get_contents("/var/www/projecto3bueno/ip.txt"); ?> 
+          <pre><?php echo file_get_contents("/var/www/Web-EvilBlock/ip.txt"); ?> 
  </pre>
         </div>
  
