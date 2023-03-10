@@ -21,7 +21,7 @@ All files have to be located in /var/www/EvilBlock (include the EvilBlock.py fro
 Assuming you have installed the requirements, from the terminal enter the following commands:
 ```bash
 cd /var/www
-git clone https://github.com/Poliestireno90/Web-EvilBlock
+git clone https://github.com/Poliestireno90/Web-EvilBlock.git
 cd EvilBlock
 git clone https://github.com/termal73/EvilBlock.git
 ```
