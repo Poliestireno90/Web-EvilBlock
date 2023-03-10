@@ -11,7 +11,7 @@ You need to have python3 installed:
 ```bash
 apt-get install pyhton3
 ```
-All files have to be located in /var/www/EvilBlock (include the EvilBlock.py from https://github.com/termal73/EvilBlock )
+All files have to be located in /var/www/EvilBlock (include the EvilBlock.py from https://github.com/termal73/EvilBlock)
 
 # How to install and setup.
 Assuming you have installed the requirements, from the terminal enter the following commands:
