@@ -2,7 +2,7 @@
 ![pixel-art-fnal](https://user-images.githubusercontent.com/116316357/224345496-a75baadf-8ca3-49e4-8b54-23cd42ea4512.png)
 
 This is a Web Interface for EvilBlock  https://github.com/termal73/EvilBlock 
-## Requeriments
+## Requirements
 - Linux distribution
 - Apache2
 - Python 3 or greater
