@@ -17,16 +17,21 @@ All files have to be located in /var/www/EvilBlock (include the EvilBlock.py fro
 Assuming you have installed the requirements, from the terminal enter the following commands:
 ```bash
 cd /var/www
-git clone
+git clone https://github.com/Poliestireno90/Web-EvilBlock
+cd EvilBlock
 git clone https://github.com/termal73/EvilBlock.git
 ```
-( if you do the git clone from another directory do ```mv EvilBlock /var/www``` )
+( if you do the git clone from another directory do ```mv EvilBlock /var/www```and```mv EvilBlock.py /var/www/EvilBlock``` )
 ```bash
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/EvilBlock```
 
-Now do ```systemctl``` restart apache2. Then you can do ```systemctl status apache2``` to see if apache is running.
+Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
 
-Now from your browser, in the URL type ```localhost```. Thats all
+# Usage
+Now from your browser, in the URL type ```localhost```.
+Red button blocks the internet for everyone except you.
+
+Green button unlocks the internet for everyone.
 
