@@ -1,5 +1,5 @@
 # Web-EvilBlock
-![pixel-art-fnal250px](https://user-images.githubusercontent.com/116316357/224299475-d2cd23fa-7b6e-4a3a-a2b8-db2a801d355c.png)
+![pixel-art-fnal](https://user-images.githubusercontent.com/116316357/224345496-a75baadf-8ca3-49e4-8b54-23cd42ea4512.png)
 
 This is a Web Interface for EvilBlock  https://github.com/termal73/EvilBlock 
 ## Requeriments
