@@ -22,20 +22,25 @@ Assuming you have installed the requirements, from the terminal enter the follow
 ```bash
 cd /var/www
 git clone https://github.com/Poliestireno90/Web-EvilBlock.git
-cd EvilBlock
 git clone https://github.com/termal73/EvilBlock.git
+cd EvilBlock
+mv EvilBlock.py /var/www/Web-EvilBlock
 ```
-( if you do the git clone from another directory do ```mv EvilBlock /var/www```and```mv EvilBlock.py /var/www/EvilBlock``` )
+( if you do the git clone from another directory do ```mv Web-EvilBlock /var/www```and ```cd EvilBlock``` then ```mv EvilBlock.py /var/www/Web-EvilBlock``` )
+
+Now do :
 ```bash
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
-On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/EvilBlock```
+On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/Web-EvilBlock```
 
 Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
 
 ## Usage
-Now from your browser, in the URL type ```localhost```.
-Red button blocks the internet for everyone except you.
+From your browser, in the URL type ```localhost```. 
+Should load the page.
+
+Red button blocks the internet for everyone ```except you```.
 
 Green button unlocks the internet for everyone.
 
