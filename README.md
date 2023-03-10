@@ -29,7 +29,7 @@ cd /var/www
 git clone https://github.com/Poliestireno90/Web-EvilBlock.git
 git clone https://github.com/termal73/EvilBlock.git
 cd EvilBlock
-mv EvilBlock.py /var/www/Web-EvilBlock
+cp EvilBlock.py /var/www/Web-EvilBlock
 ```
 ( if you do the git clone from another directory do ```mv Web-EvilBlock /var/www```and ```cd EvilBlock``` then ```mv EvilBlock.py /var/www/Web-EvilBlock``` )
 
