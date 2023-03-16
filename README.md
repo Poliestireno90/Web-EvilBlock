@@ -45,7 +45,6 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/Web-EvilBlock```
 
 Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
-Assuming you have installed the requirements, from the terminal enter the following commands:
 ## Manual Installation
 ```bash
 cd /var/www
