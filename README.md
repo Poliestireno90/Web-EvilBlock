@@ -32,17 +32,19 @@ git clone https://github.com/termal73/EvilBlock.git
 cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
 sudo chown -R www-data:www-data Web-EvilBlock
 sudo chmod -R 774 Web-EvilBlock
-
 ```
+---
 In order to run EvilBlock.py you need sudo permissions. So we need the Apache user to have these permissions (**www-data**)
 
 ```bash
 echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
 ```
+```bash
+echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
+```
+What this command does is add the line ```www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 ***/var/www/Web-EvilBlock/EvilBlock.py```and```www-data ALL=(ALL) NOPASSWD:/usr/bin/bash /var/www/Web-EvilBlock/pkill.sh``` to visudo. Which makes the user www-data have **sudo permission** in ***EvilBlock.py*** and in ***pkill -f EvilBlock.py*** without the need for a password.
 
-What this command does is add the line ```www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 ***/var/www/Web-EvilBlock/EvilBlock.py``` to visudo. Which makes the user www-data have **sudo permission** in EvilBlock.py without the need for a password.
-
-You can manually do this by doing ```sudo visudo``` and adding the line yourself.
+You can manually do this by doing ```sudo visudo``` and adding the lines yourself.
 
 ---
 ***Note: Be very careful when editing the sudoers file, as incorrect changes can render your system unusable***
