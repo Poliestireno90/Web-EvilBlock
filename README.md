@@ -22,14 +22,35 @@ apt-get install pyhton3
 ```
 ---
 All files have to be located in ***/var/www/Web-EvilBlock*** (include the EvilBlock.py from https://github.com/termal73/EvilBlock)
-- - -
+## Usage
+From your browser, in the URL type ```localhost```. 
+Should load the page.
+
+<span style="color:green">Red button</span> blocks the internet for everyone ```except you```.
+
+Green button unlocks the internet for everyone.
+___
 ## How to install and setup.
-Assuming you have installed the requirements, from the terminal enter the following commands:
+## Semi-auto installation.
 ```bash
 cd /var/www
-git clone https://github.com/Poliestireno90/Web-EvilBlock.git
-git clone https://github.com/termal73/EvilBlock.git
-cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
+sudo git clone https://github.com/Poliestireno90/Web-EvilBlock.git
+sudo bash /var/www/Web-EvilBlock/install.sh
+```
+#### Now do :
+```bash
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/Web-EvilBlock```
+
+Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
+Assuming you have installed the requirements, from the terminal enter the following commands:
+## Manual Installation
+```bash
+cd /var/www
+sudo git clone https://github.com/Poliestireno90/Web-EvilBlock.git
+sudo git clone https://github.com/termal73/EvilBlock.git
+sudo cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
 sudo chown -R www-data:www-data Web-EvilBlock
 sudo chmod -R 774 Web-EvilBlock
 ```
@@ -57,11 +78,5 @@ On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /
 
 Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
 ___
-## Usage
-From your browser, in the URL type ```localhost```. 
-Should load the page.
 
-Red button blocks the internet for everyone ```except you```.
-
-Green button unlocks the internet for everyone.
 
