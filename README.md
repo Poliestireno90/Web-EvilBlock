@@ -29,8 +29,13 @@ cd /var/www
 git clone https://github.com/Poliestireno90/Web-EvilBlock.git
 git clone https://github.com/termal73/EvilBlock.git
 cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
+sudo chown -R www-data:www-data Web-EvilBlock
+sudo chmod -R 774 Web-EvilBlock
 ```
-( if you do the git clone from another directory do ```mv Web-EvilBlock /var/www```and ```cd EvilBlock``` then ```mv EvilBlock.py /var/www/Web-EvilBlock``` )
+This command gives sudo permission to the user of apache (**www-data**)
+```bash
+echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
+```
 
 Now do :
 ```bash
@@ -38,13 +43,8 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/Web-EvilBlock```
 
-#### **IMPORTANT**
 
-In order for it to work, we need to make the apache user (www-data) have sudo permissions to run the scripts correctly. The way I got it to work is not very secure (I'm working on it, this is a provisional version) That means that if someone were to break into your system, they could access with root permissions very easily.
-```bash
-echo 'www-data ALL=(ALL) NOPASSWD: ALL' | sudo EDITOR='tee -a' visudo
-```
-What this command does is add the line ```www-data ALL=(ALL) NOPASSWD: ALL``` to visudo. Which makes the user www-data have **ROOT PERMISSION** without the need for a password.
+What this command does is add the line ```www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py``` to visudo. Which makes the user www-data have **SUDO PERMISSION** without the need for a password.
 You can manually do this by doing ```sudo visudo``` and adding the line yourself. 
 
 Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
