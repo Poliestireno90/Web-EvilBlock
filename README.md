@@ -39,12 +39,13 @@ In order to run EvilBlock.py you need sudo permissions. So we need the Apache us
 ```bash
 echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
 ```
----
-***Note: Be very careful when editing the sudoers file, as incorrect changes can render your system unusable***
-- - -
+
 What this command does is add the line ```www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 ***/var/www/Web-EvilBlock/EvilBlock.py``` to visudo. Which makes the user www-data have **sudo permission** in EvilBlock.py without the need for a password.
 
 You can manually do this by doing ```sudo visudo``` and adding the line yourself.
+
+---
+***Note: Be very careful when editing the sudoers file, as incorrect changes can render your system unusable***
 - - -
 #### Now do :
 ```bash
