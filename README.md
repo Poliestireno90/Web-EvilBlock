@@ -26,9 +26,10 @@ All files have to be located in ***/var/www/Web-EvilBlock*** (include the EvilBl
 From your browser, in the URL type ```localhost```. 
 Should load the page.
 
-<span style="color:green">Red button</span> blocks the internet for everyone ```except you```.
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Red button blocks the internet for everyone ```except you```.
 
-Green button unlocks the internet for everyone.
+![#f03c15](https://via.placeholder.com/15/008000/000000?text=+) Green button unlocks the internet for everyone.
+
 ___
 ## How to install and setup.
 ## Semi-auto installation.
