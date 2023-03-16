@@ -40,7 +40,7 @@ In order to run EvilBlock.py you need sudo permissions. So we need the Apache us
 echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
 ```
 ```bash
-echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 /var/www/Web-EvilBlock/EvilBlock.py' | sudo EDITOR='tee -a' visudo
+echo 'www-data ALL=(ALL) NOPASSWD:/usr/bin/bash /var/www/Web-EvilBlock/pkill.sh' | sudo EDITOR='tee -a' visudo
 ```
 What this command does is add the line ```www-data ALL=(ALL) NOPASSWD:/usr/bin/python3 ***/var/www/Web-EvilBlock/EvilBlock.py```and```www-data ALL=(ALL) NOPASSWD:/usr/bin/bash /var/www/Web-EvilBlock/pkill.sh``` to visudo. Which makes the user www-data have **sudo permission** in ***EvilBlock.py*** and in ***pkill -f EvilBlock.py*** without the need for a password.
 
