@@ -34,7 +34,7 @@
         <!-- ejecuta el bash que ejecuta el bloquear.py -->
         <?php
       if(isset($_POST['ejecutar'])) {
-        $output = shell_exec('bash /var/www/Web-EvilBlock/ejecuta_py.sh');
+        $output = shell_exec('sudo python3 /var/www/Web-EvilBlock/EvilBlock.py');
         
         $ruta_archivo = '/var/www/Web-EvilBlock/ip.txt';
        /* $contenido_archivo = file_get_contents($ruta_archivo);*/
