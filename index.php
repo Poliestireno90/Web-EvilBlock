@@ -59,7 +59,7 @@
         <!-- Devuelve el internet -->
         <?php
       if(isset($_POST['ejecutar2'])) {
-        $output = shell_exec('sudo pkill -f EvilBlock.py');
+        $output = shell_exec('sudo bash /var/www/Web-EvilBlock/pkill.sh');
        
       }
     ?>
