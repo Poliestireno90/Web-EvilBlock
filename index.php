@@ -68,18 +68,6 @@
       
     </div>
 
-
-    <nav>
-      <div class="texto">
-        <p>
-          La información del programa la podemos encontrar
-          en:
-        </p>
-
-
-        <p class="link"><a href="#">Página</a></p>
-      </div>
-    </nav>
 <div class="output">
           IP's de la red:
           <pre><?php echo file_get_contents("/var/www/Web-EvilBlock/ip.txt"); ?> 
