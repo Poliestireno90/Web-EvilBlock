@@ -1,4 +1,7 @@
 cd /var/www
+sudo apt-get install pip
+sudo apt-get install arp-scan
+sudo pip install scapy
 git clone https://github.com/termal73/EvilBlock.git
 cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
 sudo chown -R www-data:www-data Web-EvilBlock
