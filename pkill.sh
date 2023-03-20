@@ -1,1 +1,1 @@
-sudo pkill -f EvilBlock.sh
+sudo pkill -f EvilBlock.py
