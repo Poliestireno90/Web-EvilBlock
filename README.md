@@ -51,6 +51,9 @@ cd /var/www
 sudo git clone https://github.com/Poliestireno90/Web-EvilBlock.git
 sudo git clone https://github.com/termal73/EvilBlock.git
 sudo cp /var/www/EvilBlock/EvilBlock.py /var/www/Web-EvilBlock
+sudo apt-get install pip
+sudo apt-get install arp-scan
+sudo pip install scapy
 sudo chown -R www-data:www-data Web-EvilBlock
 sudo chmod -R 774 Web-EvilBlock
 ```
