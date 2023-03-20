@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="images/pixel-art128px.ico" type="image/x-icon">
 
   <head>
-    <title>Bloquear internet</title>
+    <title>EvilBlock</title>
   </head>
 
 <body>
