@@ -32,19 +32,12 @@ Should load the page.
 
 ___
 ## How to install and setup.
-## Semi-auto installation.
+## Auto Installation.
 ```bash
 cd /var/www
 sudo git clone https://github.com/Poliestireno90/Web-EvilBlock.git
 sudo bash /var/www/Web-EvilBlock/install.sh
 ```
-#### Now do :
-```bash
-sudo nano /etc/apache2/sites-available/000-default.conf
-```
-On the <Virtualhost *:80> edit the DocumentRoot line and enter ```DocumentRoot /var/www/Web-EvilBlock```
-
-Now do ```systemctl restart apache2```. Then you can do ```systemctl status apache2``` to see if apache is running.
 ## Manual Installation
 ```bash
 cd /var/www
